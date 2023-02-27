@@ -1,0 +1,44 @@
+.Competencias {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  
+  .Competencias-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .Competencia {
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: var(--tag-shadow);
+    border-radius: 42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+  }
+  
+  .Competencias-list {
+    list-style: none;
+    padding: 0;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media(min-width: 950px) {
+    .Competencias-title {
+      font-size: 50px;
+    }
+    
+    .Competencia {
+      font-size: 30px;
+      margin: 20px;
+    }
+  }
+
+.Competencia:hover{
+    filter: drop-shadow(0 0 5px var(--secondary));
+  }

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto&display=swap');
+
+:root {
+    --primary: #567189;
+    --primary-variant: #7B8FA1;
+    --secondary: #CFB997;
+    --secondary-variant: #FAD6A5;
+    --background: #FFFFFF;
+    --surface: #d2dce4af;
+    --erorr:#B00020;
+    --on-primary: #FFFFFF;
+    --on-primary-2: #ffffffc0;
+    --on-secondary: #000000;
+    --on-background: #000000;
+    --on-background-2: #000000c0;
+    --on-surface: #000000;  
+    --on-error: #FFFFFF;
+    --menu-mobile-background-color: #3f5364;
+    --navbar-shadow: 0 4px 5px #e5e5e5;
+    --tag-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    --transition: 0.2s ease-in-out;
+    --accent-color: var(--secondary);
+  
+    color-scheme: light;
+  }
+  
+  :root[data-theme="dark"] {
+    --primary: #222831;
+    --primary-variant: #393E46;
+    --secondary: #00ADB5;
+    --background: #000000;
+    --on-background: #FFFFFF;
+    --on-primary: var(--on-background);
+    --surface: #1a1d20b7;
+    --menu-mobile-background-color: #1d2129;
+    --accent-color: var(--secondary);
+    --navbar-shadow: 0 1px rgba(51, 65, 85, 0.8);
+    --tag-shadow: 0 0 0 1px #ffffff;
+    color-scheme: dark;
+  }
+  /* } */
+  
+  form {
+    color-scheme: light;
+  }
+  
+  * {
+    transition: 
+    
+    background-color var(--transition),
+    box-shadow var(--transition);
+    background-image:  var (--transition);
+    
+
+  }
+  
+  svg {
+    transition: color var(--transition);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section[id] {
+    scroll-margin-top: 70px;
+  }
+
+  body {
+    font-family: Inter, sans-serif;
+    background-color: var(--background);
+    color: var(--on-background);
+    padding-top: 70px;
+    /*background-image:  
+      linear-gradient(135deg, var(--surface) 25%, transparent 25%), 
+      linear-gradient(225deg, var(--surface)  25%, transparent 25%), 
+      linear-gradient(45deg, var(--surface)  25%, transparent 25%), 
+      linear-gradient(315deg, var(--surface)  25%, transparent 25%);
+    background-position:  40px 0, 40px 0, 0 0, 0 0;
+    background-size: 80px 80px;
+    background-repeat: repeat; */
+  }
+
+
+  
+  a {
+    text-decoration: none;
+    color: var(--on-background);
+  }
+  
+  .horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  @media (min-width: 950px) {
+    .horizontal-padding {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+    .vertical-padding {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link rel="icon" type="vsg" href="ico/code.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/sidebar.css"/>
+    <link rel="stylesheet" href="css/perfil.css"/>
+    <link rel="stylesheet" href="css/educacion.css"/>
+    <link rel="stylesheet" href="css/competencias.css"/>
+    <link rel="stylesheet" href="css/experiencia.css"/>
+    <link rel="stylesheet" href="css/contacto.css"/>
+    <script defer src="js/app.js"></script>     
+    <script defer src="js/color.js"></script>    
+    <script defer src="js/colorToggle.js"></script>
+    <script defer src="js/menu.js"></script>    
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="https://statics.forbesargentina.com/2022/12/crop/63a1aa07f3f5c__822x822.webp"
+            alt="programador"/>
+          <div class="logotype">Franco Elsezar<br/>/dev>          
+          </div>
+        </a>
+        <ul class="menu">
+
+
+          
+          <button class="close-menu" aria-label="Cerrar menú">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18">
+            </line><line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          </button>
+
+          <li class="navItem"><a href="#perfil" class="">Perfil</a></li>
+          <li class="navItem"><a href="#educ" class="">Educación</a></li>
+          <li class="navItem"><a href="#Competencias">Competencias</a></li>
+          <li class="navItem"><a href="#experiencia">Experiencia</a></li>
+          <li class="navItem"><a href="#contacto">Contacto</a></li>
+
+        </ul>
+        <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            class="feather feather-sun">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="light-mode-btn" aria-label="Activar modo claro">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24" height="24" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            class="feather feather-moon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="open-menu" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            class="feather feather-menu">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>  
+        </button>
+
+        <div class="toggle-btn">
+          <button class="open-menu2" aria-label="Abrir menú">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                      width="24" 
+                      height="24" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      class="feather feather-menu">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+          </button>
+        </div>
+
+
+      </nav>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <li><a href="#perfil" class="">Perfil</a></li>
+        <li><a href="#educ" class="">Educación</a></li>
+        <li><a href="#Competencias" class="">Competencias</a></li>
+        <li><a href="#experiencia" class="">Experiencia</a></li>
+        <li><a href="#contacto" class="">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="perfil" id="perfil">
+        <div class="perfil-info">
+          
+          <h1 class="perfil-title">Hola, soy<br/>Franco Elsezar</h1>
+          <p class="perfil-details">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing
+            elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna 
+            aliqua. Ut enim
+            ad minim veniam
+          </p>
+          <a class="perfil-btn" href="/CV.pdf" download>Descargar cv</a>
+        </div>
+        <span class="perfil-img-section">
+          <img class="perfil-img" src="https://statics.forbesargentina.com/2022/12/crop/63a1aa07f3f5c__822x822.webp" alt="Foto de perfil"/>
+          <div class="perfil-img-line"></div>
+        </span>
+      </section>
+    </div>
+    
+    <section class="educacion" id="educ">
+      <svg class="wave"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"/>
+      </svg>
+      <div class="educacion-body">
+        <h2 class="educacion-title">Educación</h2>
+        <div class="educacion-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="educ">
+            <div class="educ-date">2012-2015</div>
+            <div class="educ-company">UNPSJB</div>
+            <div class="educ-position">Analista en sistemas</div>
+            <div class="educ-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam
+            </div>
+          </div>
+          <div class="educ educ_left">
+            <div class="educ-date">2011-2012</div>
+            <div class="educ-company">Centro de encuentro</div>
+            <div class="educ-position">Reparación de PC</div>
+            <div class="educ-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="educ">
+            <div class="educ-date">2002-2010</div>
+            <div class="educ-company">Escuela Provincial N° 7722</div>
+            <div class="educ-position">Bachiller</div>
+            <div class="educ-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="wave wave_bottom"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"/>
+      </svg>
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="Competencias" id="Competencias">
+        <h2 class="Competencias-title">Competencias</h2>
+        <ul class="Competencias-list">
+          <li class="Competencia">CSS</li>
+          <li class="Competencia">HTML</li>
+          <li class="Competencia">Node.js</li>
+          <li class="Competencia">React.js</li>
+          <li class="Competencia">TypeScript</li>
+          <li class="Competencia">JavaScript</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="experiencias" id="experiencia">
+      <svg class="wave"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"/>
+      </svg>
+      <div class="experiencias-body">
+        <h2 class="experiencias-title">Experiencia</h2>
+        <div class="experiencias-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experiencia">
+            <div class="experiencia-date">2020-2023</div>
+            <div class="experiencia-company">empresa 1</div>
+            <div class="experiencia-position">Senior Software Engineer</div>
+            <div class="experiencia-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam
+            </div>
+          </div>
+          <div class="experiencia experiencia_left">
+            <div class="experiencia-date">2018-2020</div>
+            <div class="experiencia-company">Empresa 2</div>
+            <div class="experiencia-position">Senior Software Engineer</div>
+            <div class="experiencia-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experiencia">
+            <div class="experiencia-date">2016-2018</div>
+            <div class="experiencia-company">Empresa 3</div>
+            <div class="experiencia-position">Junior Software Engineer</div>
+            <div class="experiencia-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="wave wave_bottom"
+        viewBox="0 0 1400 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M-15.0079 22.92C354.732 63.38 953.596 -55.05 1437.13 45.63L1400 55H6.55479e-05L-15.0079 22.92Z"
+          fill="currentColor"/>
+      </svg>
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="contacto" id="contacto">
+        <h2 class="contacto-title">Contacto</h2>
+        <div class="contacto-details">
+          <div class="contacto-details-group">
+            <p class="contacto-label">Dirección:</p>
+            <p class="contacto-text">Esquel, Chubut</p>
+          </div>
+          <div class="contacto-details-group">
+            <p class="contacto-label">Email:</p>
+            <p class="contacto-text">loremipsum@gmail.com</p>
+          </div>
+          <div class="contacto-details-group">
+            <p class="contacto-text">
+              Deje su mensaje y le responderé a la brevedad
+            </p>
+          </div>
+        </div>
+        <form class="contacto-form" name="contacto">
+          <div class="contacto-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" placeholder="Ingrese su nombre"/>
+          </div>
+          <div class="contacto-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" placeholder="Ingrese su dirección de E-Mail"/>
+          </div>
+          <div class="contacto-form-group">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"placeholder="Ingrese su mensaje aquí"></textarea>
+          </div>
+          <br>
+          <button type="submit" class="contacto-form-submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="feather feather-github">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="feather feather-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2">
+                    </circle>
+                </svg>    
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="feather feather-twitter">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        class="feather feather-youtube">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+            </li>
+          </ul>
+        </nav>
+        
+      </section>
+    </div>
+  <br><br><br><br><br><br>
+  </body>
+</html>
